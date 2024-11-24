@@ -3,16 +3,10 @@ console.log("Pressing Play on video ending will restart the current video (not a
 console.log("Video player keyboard controls: Spacebar: Play/Pause video; ArrowKeyRight: Skipping to next video; ArrowKeyRight: Returning to previous video; Numpad1/Digit1 for video selecting; Tab to change between OPs and EDs and Insert Songs.")
 console.log("Q,W,E,R: For respective buttons (left to right). Press F for Fullscreen toggling. Press T for Theater Mode toggling")
 var videoUrls = [
-    "Openings_and_Endings/OP1 - Redo.mp4",
-    "Openings_and_Endings/ED1 - STYX HELIX.mp4",
-    "Openings_and_Endings/OP2 - Paradisus - Paradoxum.mp4",
-    "Openings_and_Endings/ED2 - Stay Alive.mp4",
-    "Openings_and_Endings/OP3 - Realize.mp4",
-    "Openings_and_Endings/ED3 - Memento.mp4",
     "Openings_and_Endings/OP4 - Long shot.mp4",
-    "Openings_and_Endings/ED4 - Believe in you.mp4",
-    "Openings_and_Endings/OP5 - Reweave.mp4",
-    "Openings_and_Endings/ED5 - Nox Lux.mp4",
+    "Openings_and_Endings/ED1 - STYX HELIX.mp4",
+    "Openings_and_Endings/OP1 - Redo.mp4",
+    "Openings_and_Endings/OP3 - Realize.mp4",
 ];
 var newvideoUrls = [
     "Insert_Songs/STRAIGHT BET.mp4",
