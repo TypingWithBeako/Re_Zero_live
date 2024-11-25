@@ -98,7 +98,6 @@ const textToChange = document.getElementById('text_to_change');
 const navbarContent = document.getElementById('oldnavbarContent');
 const newnavbarContent = document.getElementById('newnavbarContent');
 const bodytext =document.getElementById('bodytext');
-const songname =document.getElementById('songname');
 const disablePreloadingbutton = document.querySelector('.subaru');
 const enablePreloadingbutton = document.querySelector('.trademark');
 const nextButton = document.getElementById('nextButton');
@@ -117,9 +116,8 @@ moveableimg.addEventListener('click', function(){
     nextClickCount = 0;
     console.log("Image clicked!"); // Add this line for testing
     if (clickCount % 2 === 1) {
-        textToChange.innerHTML = "All <s> OPs and EDs</s> Insert Songs";
+        textToChange.innerHTML = "All <s> Live Concerts</s> Insert Songs";
         bodytext.innerHTML = "Insert Songs and more!"
-        songname.innerHTML = "Openings and Endings"
         navbarContent.style.display = 'none';
         newnavbarContent.style.display ='block';
         videoPlayer.src= newvideoUrls[0];
@@ -128,7 +126,6 @@ moveableimg.addEventListener('click', function(){
         isSwitching = false; 
         textToChange.classList.add('fade-in-title');
         bodytext.classList.add('fade-in-bodytext');
-        songname.classList.add('fade-in-songname');
         newnavbarContent.classList.add('slide-in');
         moveableimg.classList.add('fade-in');
         backButton.style.display ='none';
@@ -140,13 +137,12 @@ moveableimg.addEventListener('click', function(){
         Openings_Content.style.display = 'none';
         Endings_Content.style.display = 'none';
         Insert_Songs_Content.style.display = '';
-        SidebarButton.innerHTML = "Change to OPs and EDs";
+        SidebarButton.innerHTML = "Change to Live Concerts";
     }
     else {
-        textToChange.innerHTML = " All OPs and EDs ";
-        bodytext.innerHTML = "Openings and Endings!";
-        songname.innerHTML = "Insert Songs"
-        navbarContent.style.display ='block';
+        textToChange.innerHTML = " Live Concert ";
+        bodytext.innerHTML = "Live Concerts!";
+        navbarContent.style.display ='flex';
         newnavbarContent.style.display ='none';
         videoPlayer.src=videoUrls[0];
         currentIndex=0;
@@ -154,7 +150,6 @@ moveableimg.addEventListener('click', function(){
         isSwitching = false; 
         textToChange.classList.add('fade-in-title');
         bodytext.classList.add('fade-in-bodytext');
-        songname.classList.add('fade-in-songname');
         navbarContent.classList.add('slide-in');
         moveableimg.classList.add('fade-in');
         nextButton.style.display ='inline';
