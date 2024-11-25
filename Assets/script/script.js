@@ -3,10 +3,10 @@ console.log("Pressing Play on video ending will restart the current video (not a
 console.log("Video player keyboard controls: Spacebar: Play/Pause video; ArrowKeyRight: Skipping to next video; ArrowKeyRight: Returning to previous video; Numpad1/Digit1 for video selecting; Tab to change between OPs and EDs and Insert Songs.")
 console.log("Q,W,E,R: For respective buttons (left to right). Press F for Fullscreen toggling. Press T for Theater Mode toggling")
 var videoUrls = [
-    "Openings_and_Endings/OP4 - Long shot.mp4",
-    "Openings_and_Endings/ED1 - STYX HELIX.mp4",
-    "Openings_and_Endings/OP1 - Redo.mp4",
-    "Openings_and_Endings/OP3 - Realize.mp4",
+    "Live_Concerts/OP4 - Long shot.mp4",
+    "Live_Concerts/ED1 - STYX HELIX.mp4",
+    "Live_Concerts/OP1 - Redo.mp4",
+    "Live_Concerts/OP3 - Realize.mp4",
 ];
 var newvideoUrls = [
     "Insert_Songs/STRAIGHT BET.mp4",
@@ -178,9 +178,6 @@ textToChange.classList.remove('fade-in-title');
 });
 bodytext.addEventListener('animationend', () => {
 bodytext.classList.remove('fade-in-bodytext');
-});
-songname.addEventListener('animationend', () => {
-songname.classList.remove('fade-in-songname');
 });
 navbarContent.addEventListener('animationend', () => {
 navbarContent.classList.remove('slide-in');
@@ -709,7 +706,7 @@ TheaterMode.addEventListener('click',function() {
             }
             else {
                 S3.style.display = 'none';
-                navbarContent.style.display = 'block';
+                navbarContent.style.display = 'flex';
             }
             paragraph.style.display = 'block';
             ReZeroCast.style.display = 'block';
