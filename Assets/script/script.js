@@ -225,7 +225,7 @@ const nextVideo = document.createElement('video');
 videoPlayer.addEventListener('timeupdate', function() {
     const currentTime = videoPlayer.currentTime;
     const duration = videoPlayer.duration;
-    if (duration - currentTime <= 5 && !disablePreloading) {
+    if (duration - currentTime <= 20 && !disablePreloading) {
 
     // Preload multiple videos based on the current video type
         if (clickCount % 2 === 1) {
