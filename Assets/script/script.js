@@ -753,3 +753,10 @@ var button = document.querySelector('#KeyboardControls');
 button.addEventListener('click', function(){
     MicroModal.show('modal-1', { awaitCloseAnimation: true,})
 });
+
+// Audio resync when changing from tabs to tabs
+document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+        videoPlayer.currentTime = videoPlayer.currentTime;
+    }
+});
