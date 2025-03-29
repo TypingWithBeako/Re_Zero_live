@@ -2,11 +2,14 @@ console.log ("To disable preloading, you can click the image below the video pla
 console.log("Pressing Play on video ending will restart the current video (not a bug, it's a feature)")
 console.log("Video player keyboard controls: Spacebar: Play/Pause video; ArrowKeyRight: Skipping to next video; ArrowKeyRight: Returning to previous video; Numpad1/Digit1 for video selecting; Tab to change between OPs and EDs and Insert Songs.")
 console.log("Q,W,E,R: For respective buttons (left to right). Press F for Fullscreen toggling. Press T for Theater Mode toggling")
+
+const URL = "https://r2-cache-worker.thaituan150806.workers.dev/"
+
 var videoUrls = [
-    "Live_Concerts/OP4 - Long shot.mp4",
-    "Live_Concerts/ED1 - STYX HELIX.mp4",
-    "Live_Concerts/OP1 - Redo.mp4",
-    "Live_Concerts/OP3 - Realize.mp4",
+    `${URL}OP4 - Long shot (LIVE).mp4`,
+    `${URL}ED1 - STYX HELIX (LIVE).mp4`,
+    `${URL}OP1 - Redo (LIVE).mp4`,
+    `${URL}OP3 - Realize (LIVE).mp4`,
 ];
 var newvideoUrls = [
     "Insert_Songs/STRAIGHT BET.mp4",
