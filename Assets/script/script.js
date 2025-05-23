@@ -3,7 +3,7 @@ console.log("Pressing Play on video ending will restart the current video (not a
 console.log("Video player keyboard controls: Spacebar: Play/Pause video; ArrowKeyRight: Skipping to next video; ArrowKeyRight: Returning to previous video; Numpad1/Digit1 for video selecting; Tab to change between OPs and EDs and Insert Songs.")
 console.log("Q,W,E,R: For respective buttons (left to right). Press F for Fullscreen toggling. Press T for Theater Mode toggling")
 
-const URL = "https://r2-cache-worker.thaituan150806.workers.dev/"
+const URL = "https://rezero-vi.7849684.xyz/"
 
 var videoUrls = [
     `${URL}OP4 - Long shot (LIVE).mp4`,
